@@ -1,0 +1,774 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+nav{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 200px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}   
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    transition: transform 500ms ease-in-out 25ms;
+    color: rgba(255, 255, 255, 0.756);
+}
+
+.content{
+    text-align:center;
+}
+.content h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+.content h1{
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    font-size: 130px;
+    color: #fff;
+    font-weight: 530;
+}
+.content h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 35px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+/*
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color:#fff;
+    font-size:24px;
+    border:2px solid #fff;
+    padding:14px 70px;
+    border-radius:50px;
+    margin-top:20px;
+} */
+
+.back-video{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+ }
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height:auto;
+   }
+}
+
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width:auto;
+        height:100%;
+   }
+}
+
+/*----About----*/
+
+.about{
+    width: 84%;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+.about h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.mypic{
+    width: 330px;
+    float: right;
+    padding-top: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.about h3{
+    color:#777;
+    font-size:16px;
+    font-weight:300;
+    line-height:22px;
+    padding:20px;
+}
+
+.about h3.abouttext2{
+    color:#777;
+    padding-top: 0px;
+}
+
+.about h3.abouttext3{
+    color:#777;
+    padding-top: 0px;
+}
+
+/*----Sign Off----*/
+
+.end{
+    width: 84%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.end .row{
+    margin-top:1%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.end .About h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.end .About p{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding: 2px;
+}
+
+.end .Contact h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.end .Contact p{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:5px;
+}
+
+
+/*----Sign Off pt 2----*/
+.theend{
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    background-image:linear-gradient(rgba(107, 70, 255, 0.569),rgba(5, 21, 123, 0.738));
+}
+
+.theend img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.theend h3{
+    color:rgb(238, 233, 233);
+    font-size:16px;
+    font-weight:300;
+    line-height:22px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/*----Project page----*/
+
+.heroproject{
+    width:100%;
+    height: 300vh;
+    background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*----Sign Off for Project page----*/
+
+.endproject{
+    width: 84%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.endproject .row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.endproject .About h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.endproject .About p{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding: 2px;
+}
+
+.endproject .Contact h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.endproject .Contact p{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:5px;
+}
+
+
+/*----Projects----*/
+
+
+/*----Project 1----*/
+
+.heroproject .project1{
+    width:100%;
+    position: absolute;
+    top:300px;
+    left:0;
+    padding: 0px 8%;
+}
+
+.heroproject .project1 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 47px;
+    font-weight: 550;
+    text-align: right;
+}
+
+.heroproject .project1 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.heroproject .project1 .project1code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: right;
+    justify-content: right;
+    
+}
+
+.heroproject .project1 .project1code h3{
+
+padding-left: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+/*----Proejct 2----*/
+
+.heroproject .project2{
+    width:100%;
+    position: absolute;
+    top:630px;
+    left: 40px;
+    padding: 0px 8%;
+}
+
+.heroproject .project2 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 47px;
+    font-weight: 550;
+    text-align: left;
+}
+
+.heroproject .project2 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 13px;
+    text-align: left;
+}
+
+.heroproject .project2 .project2code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.heroproject .project2 .project2code h3{
+padding-right: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+/*----Project 3----*/
+
+.heroproject .project3{
+    width:100%;
+    position: absolute;
+    top:970px;
+    left:0;
+    padding: 0px 8%;
+}
+
+.heroproject .project3 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 55px;
+    font-weight: 550;
+    text-align: right;
+}
+
+.heroproject .project3 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.heroproject .project3 .project3code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: right;
+    justify-content: right;
+    
+}
+
+.heroproject .project3 .project3code h3{
+
+padding-left: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+/*----Project 4----*/
+
+.heroproject .project4{
+    width:100%;
+    position: absolute;
+    top:1270px;
+    left:0;
+    padding: 0px 8%;
+}
+
+.heroproject .project4 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 55px;
+    font-weight: 550;
+    text-align: left;
+}
+
+.heroproject .project4 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.heroproject .project4 .project4code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.heroproject .project4 .project4code h3{
+padding-right: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+/*----Project 5----*/
+
+.heroproject .project5{
+    width:100%;
+    position: absolute;
+    top:1580px;
+    left:0;
+    padding: 0px 8%;
+}
+
+.heroproject .project5 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 55px;
+    font-weight: 550;
+    text-align: right;
+}
+
+.heroproject .project5 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.heroproject .project5 .project5code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: right;
+    justify-content: right;
+    
+}
+
+.heroproject .project5 .project5code h3{
+
+padding-left: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+/*----Project 6----*/
+
+.heroproject .project6{
+    width:100%;
+    position: absolute;
+    top:1900px;
+    left:0;
+    padding: 0px 8%;
+}
+
+.heroproject .project6 h1{
+    text-decoration: none;
+    color:#fff;
+    font-size: 55px;
+    font-weight: 550;
+    text-align: left;
+}
+
+.heroproject .project6 h2{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px; 
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.heroproject .project6 .project6code{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.heroproject .project6 .project6code h3{
+padding-right: 30px;
+color:#fff;
+font-size: 13px;
+font-weight: 100;
+}
+
+
+/*----Project Videos----*/
+/*----Project 1----*/
+
+.coinpickingrobot{  
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    height: 380px;
+    width: 460px;
+    position: relative;
+    
+}
+
+.project1 video{  
+    position: absolute;
+    top:-90px;
+}
+
+/*----Project 2----*/
+.capacitanceboard{  
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s; 
+    height: 380px;
+    width: 460px;
+    position: relative;
+}
+
+.project2 video{  
+    position: absolute;
+    top:-70px;
+    left:710px;
+
+}
+/*----Project 3----*/
+/*----Project 4----*/
+/*----Project 5----*/
+/*----Project 6----*/
+
+
+
+/*----Project Downloadable Items----*/
+
+.bn632-hover {
+    width: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn24 {
+    background-image: linear-gradient(
+        to right,
+        #6253e1,
+        #852d91,
+        #a3a1ff,
+        #8e37d7
+      );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+
+/*----Project 1 downloads----*/
+.project1downloads{
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width:100%;
+    position: absolute;
+    top:140px;
+    right:74px;
+}
+
+/*----Project 2 downloads----*/
+.project2downloads{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width:100%;
+    position: absolute;
+    top:130px;
+    left:74px;
+}
+
+/*----Project 3 downloads----*/
+
+.project3downloads{
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width:100%;
+    position: absolute;
+    top:140px;
+    right:74px;
+}
+
+
+/*----Project 4 downloads----*/
+
+.project4downloads{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width:100%;
+    position: absolute;
+    top:130px;
+    left:74px;
+}
+/*----Project 5 downloads----*/
+
+.project5downloads{
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width:100%;
+    position: absolute;
+    top:140px;
+    right:74px;
+}
+/*----Project 6 downloads----*/
+
+.project6downloads{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width:100%;
+    position: absolute;
+    top:130px;
+    left:74px;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+/*----Resume Page----*/
+
+/*----Resume Intro----*/
+
+/*----Resume Donwloads----*/
+
+/*----Resume Experiances----*/
+
+/*----Archives----*/
+
+/*----Coming soon----*/
+
+.contentarchive{
+    text-align:center;
+}
+.contentarchive h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    text-align: left;
+}
+.contentarchive h1{
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    font-size: 120px;
+    color: #fff;
+    font-weight: 530;
+}
+.contentarchive h2{
+    font-size: 23px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 50px;
+    padding-left: 5px;
+    text-align: left;
+}
